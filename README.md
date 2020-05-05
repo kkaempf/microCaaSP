@@ -17,7 +17,7 @@ In order for microCaaSP to download image and xml files, you need to run via con
 ### 2. kvm related tools
 These are essential and related packages for kvm virtualization
 ```
-sudo zypper in  qemu-kvm guestfs-tools libvirt libvirt-daemon-qemu virt-manager bridge-utils
+sudo zypper in  qemu-kvm guestfs-tools libvirt libvirt-daemon-qemu virt-manager bridge-utils libvirt-devel
 sudo systemctl start libvirtd  && sudo systemctl enable libvirtd
 sudo usermod -aG libvirt,kvm $USER
 ```
